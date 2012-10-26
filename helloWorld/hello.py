@@ -3,7 +3,10 @@
 for x in range(0,eteration):
 	print "Hello World" 
 """
-for x % 3 == 0  in range (20):
-	print 'Sava'
-for x % 5 == 0 in range (20):
-	print 'Commit'
+gruz = 75
+lojka_deogtea = 15.0 / 100
+sare_pe_rana = 8.62 / 100
+
+gruz_total = gruz + gruz * lojka_deogtea + gruz * sare_pe_rana
+print gruz_total
+
