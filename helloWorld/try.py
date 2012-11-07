@@ -1,0 +1,1 @@
+number = raw_input("Enter number:")
