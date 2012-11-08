@@ -1,12 +1,11 @@
 # number = raw_input('Enter number:')
 # print "number is", number
-
-def is_prim(n):
-	for x in range (2,n):
-		if n % x == 0:
-			return False
-	return True
-
+from math import sqrt
+# def is_prime(n):
+# 	for x in range (2, int(n**0.5)+1, 2):
+# 		if n % x == 0:
+# 			return False
+# 	return True
 
 def isprime(n):
     '''check if integer n is a prime'''
@@ -29,13 +28,10 @@ def isprime(n):
     return True
 
 number = 600851475143
-#max(nump(n))<number
 n=2
-
-while n<number:
+for n in range (2, int(sqrt(number))+1):
 	n+=1
-	if isprime(n):
+	if is_prime(n):
 		if number%n==0:
 			print n
-
 print "end"
